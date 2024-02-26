@@ -1,0 +1,3 @@
+@for(day of days; track day){
+    <app-calendar-day [day] = "day"  (click)="eventHandler(day)"></app-calendar-day>
+}
