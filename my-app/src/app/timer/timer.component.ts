@@ -31,7 +31,6 @@ export class TimerComponent implements OnInit{
 
     ngOnInit(): void {
         effect((onCleanup)=>{
-          console.log(1);
           if (this.isBrowser) {
             const timer = setInterval(() => {
                 this.date.update(()=> formatDate(new Date() as Date, "dd/MM/YY HH:mm:ss", "es-ES", "GMT+1"))
