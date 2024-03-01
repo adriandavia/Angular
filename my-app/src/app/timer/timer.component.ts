@@ -28,7 +28,7 @@ export class TimerComponent implements OnInit{
     constructor(private injector : Injector, @Inject(PLATFORM_ID) platformId: Object){
       this.isBrowser = isPlatformBrowser(platformId);
     }
-
+    
     ngOnInit(): void {
         effect((onCleanup)=>{
           if (this.isBrowser) {
