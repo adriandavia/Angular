@@ -1,7 +1,0 @@
-@for(day of days; track day){
-    <!--
-        * El valor de la variable del componente se le pasa por []
-        * [attr.data-day] no se pasa al componente, se queda en el html
-    -->
-    <app-calendar-day [day] = "day" [attr.data-day]="day"></app-calendar-day>
-}
